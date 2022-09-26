@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bookstore-manager-fe/static/css/main.e6c13ad2.css",
+    "main.js": "/bookstore-manager-fe/static/js/main.11aca43c.js",
+    "static/js/787.5d695811.chunk.js": "/bookstore-manager-fe/static/js/787.5d695811.chunk.js",
+    "index.html": "/bookstore-manager-fe/index.html",
+    "main.e6c13ad2.css.map": "/bookstore-manager-fe/static/css/main.e6c13ad2.css.map",
+    "main.11aca43c.js.map": "/bookstore-manager-fe/static/js/main.11aca43c.js.map",
+    "787.5d695811.chunk.js.map": "/bookstore-manager-fe/static/js/787.5d695811.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.11aca43c.js"
+  ]
+}
