@@ -1,2 +1,9 @@
 .wrapper {
+	background-color: red;
+	width: 100px;
+	display: block;
+
+	&-hide {
+		display: none;
+	}
 }

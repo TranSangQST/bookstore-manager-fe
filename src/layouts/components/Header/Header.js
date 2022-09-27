@@ -7,17 +7,13 @@ import images from "../../../assets/image";
 
 const cx = classNames.bind(styles);
 
-function Header() {
+function Header({ onShowSidebar }) {
 	// const currentUser = true
 
 	return (
 		<header className={cx("wrapper")}>
-			Header
-			{/*<div className={cx("inner")}>*/}
-			{/*	<Link to={config.routes.home} className={cx("logo-link")}>*/}
-			{/*		<img src={images.logo} alt="Logo" />*/}
-			{/*	</Link>*/}
-			{/*</div>*/}
+			<button onClick={onShowSidebar}>Toggle</button>
+			<div>Header</div>
 		</header>
 	);
 }

@@ -6,10 +6,16 @@ import styles from "./Sidebar.module.scss";
 
 const cx = classNames.bind(styles);
 
-function Sidebar() {
+function Sidebar({ sidebar }) {
 	// const currentUser = true
 
-	return <nav className={cx("wrapper")}>Sidebar</nav>;
+	console.log("sidebar in Sidebar: ", sidebar);
+
+	return (
+		<nav className={sidebar ? cx("wrapper") : cx("wrapper-hide")}>
+			Sidebar
+		</nav>
+	);
 }
 
 export default Sidebar;

@@ -5,6 +5,8 @@ import Sidebar from "./layouts/components/Sidebar";
 import Footer from "./layouts/components/Footer";
 
 import { publicRoutes } from "./routes";
+import Home from "./pages/Home";
+import DefaultLayout from "./layouts/DefaultLayout/DefaultLayout";
 
 // import { DefaultLayout } from "./layouts"
 // import { Fragment } from "react"
@@ -12,27 +14,29 @@ import { publicRoutes } from "./routes";
 function App() {
 	return (
 		<>
-			<Header></Header>
-			<Sidebar></Sidebar>
-			<Footer></Footer>
-			<Table></Table>
-			{/* // <Router>
-				// 	<div className="App">
-				// 		<Routes>
-				// 			{publicRoutes.map((route, index) => {
-				// 				// console.log("route: ", route)
-				// 				const Page = route.component
-				// 				return (
-				// 					<Route
-				// 						key={index}
-				// 						path={route.path}
-				// 						element={<Page />}
-				// 					/>
-				// 				)
-				// 			})}
-				// 		</Routes>
-				// 	</div>
-				// </Router> */}
+			<div className="App">
+				<DefaultLayout>
+					<Home />
+				</DefaultLayout>
+			</div>
+			{/* <Router>
+				<div className="App">
+					<Routes>
+						{publicRoutes.map((route, index) => {
+							console.log("route: ", route);
+							const Page = route.component;
+							console.log("Page: ", <Page />);
+							return (
+								<Route
+									key={index}
+									path={route.path}
+									element={<Page />}
+								/>
+							);
+						})}
+					</Routes>
+				</div>
+			</Router> */}
 		</>
 	);
 }
