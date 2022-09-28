@@ -1,10 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Table from "./components/Table";
-import Header from "./layouts/components/Header";
-import Sidebar from "./layouts/components/Sidebar";
-import Footer from "./layouts/components/Footer";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { publicRoutes } from "./routes";
+// import { publicRoutes } from "./routes";
 import Home from "./pages/Home";
 import DefaultLayout from "./layouts/DefaultLayout/DefaultLayout";
 

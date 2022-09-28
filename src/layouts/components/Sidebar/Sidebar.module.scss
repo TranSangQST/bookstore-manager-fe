@@ -1,4 +1,10 @@
 .wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	margin-top: var(--sidebar-mt);
+
 	background-color: red;
 	width: 100px;
 	display: block;

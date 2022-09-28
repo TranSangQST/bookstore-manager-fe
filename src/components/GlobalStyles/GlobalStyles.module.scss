@@ -1,12 +1,29 @@
-@import "normalize.css";
+// @import "normalize.css";
+
+$header-background-color: #212529;
+$sidebar-background-color: $header-background-color;
+
+$header-height: 50px;
+$sidebar-mt: $header-height;
+$general-ml: 20px;
+$general-mr: 20px;
 
 :root {
 	--primary: #fe2c55;
-	--black: #000;
-	--white: #fff;
+	--black-color: #000;
+	--white-color: #fff;
 	--text-color: #161823;
 
-	--font-family: "ProximaNova", sans-serif;
+	--font-family: "Roboto", sans-serif;
+
+	--header-background-color: #{$header-background-color};
+	--sidebar-background-color: #{$sidebar-background-color};
+
+	--header-height: #{$header-height};
+	--sidebar-mt: #{$sidebar-mt};
+
+	--general-ml: #{$general-ml};
+	--general-mr: #{$general-mr};
 }
 
 * {
@@ -25,7 +42,6 @@ body {
 	line-height: 1.5;
 	text-rendering: optimizespeed;
 	color: var(--text-color);
-	overflow-y: overlay;
 }
 
 button,
