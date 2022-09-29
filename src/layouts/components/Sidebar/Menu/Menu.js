@@ -7,14 +7,19 @@ import styles from "./Menu.module.scss";
 
 const cx = classNames.bind(styles);
 
-function Menu({ group, title, children }) {
+function Menu({ title, children }) {
 	// return <nav className={cx("wrapper")}>{children}</nav>;
 
 	const [open, setOpen] = useState(false);
 
 	console.log("children: ", children);
 
-	return <div className={cx("wrapper")}> {children}</div>;
+	return (
+		<div className={cx("wrapper")}>
+			<h3 className={cx("title")}>{title}</h3>
+			{children}
+		</div>
+	);
 }
 
 // function Menu({ group, title, children }) {

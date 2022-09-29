@@ -15,7 +15,7 @@ function MenuGroup({ title, children }) {
 	console.log("children: ", children);
 
 	return (
-		<div className={cx("wrapper")}>
+		<div className={cx("group")}>
 			<a className={cx("title")} onClick={() => setOpen(!open)}>
 				{title}
 			</a>

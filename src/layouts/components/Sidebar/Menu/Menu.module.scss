@@ -6,21 +6,56 @@
 		padding-left: var(--general-ml);
 	}
 
-	.menu-item {
-		display: block;
-		padding-left: var(--general-ml);
-		color: blue;
+	// .item {
+	// 	padding-left: var(--general-ml);
+	// 	display: block;
+	// 	$pleft: padding-left;
+	// 	margin-top: $pleft;
+	// }
+	// .sub-menu {
+	// 	display: block;
+	// 	.title {
+	// 		padding-left: var(--general-ml);
+	// 		color: red;
+	// 	}
+	// }
+	// .items {
+	// 	.item {
+	// 		color: yellow;
+	// 		padding-left: calc(var(--general-ml) + 20px);
+	// 	}
+	// }
 
-		text-decoration: none;
-		font-weight: 500;
-	}
+	// .item {
+	// 	display: block;
+	// 	padding-left: var(--general-ml);
+	// 	color: blue;
 
-	.group-list {
-		.menu-item {
-			color: red;
-			padding-left: calc(var(--general-ml) + 20px);
-		}
-	}
+	// 	text-decoration: none;
+	// 	font-weight: 500;
+	// }
+
+	// .sub-menu {
+	// 	// .title {
+	// 	// 	padding-left: 500px;
+	// 	// }
+
+	// 	.sub-menu-items {
+	// 		.item {
+	// 			padding-left: 500px;
+	// 		}
+	// 	}
+	// }
+
+	// .group-list {
+	// 	.title {
+	// 		padding-left: 50px;
+	// 	}
+	// 	.menu-item {
+	// 		color: red;
+	// 		padding-left: calc(var(--general-ml) + 20px);
+	// 	}
+	// }
 }
 
 // .wrapper {

@@ -21,9 +21,32 @@ function Sidebar({ sidebar }) {
 
 	return (
 		<div className={sidebar ? cx("wrapper") : cx("wrapper", "hide")}>
-			<Menu>
+			<Menu title="Core" to="https://tiktok.fullstack.edu.vn/api/">
 				<MenuItem
-					title="Danh sách bán"
+					title="Sang1"
+					to="https://tiktok.fullstack.edu.vn/api/">
+					<MenuItem
+						title="Sang1a"
+						to="https://tiktok.fullstack.edu.vn/api/"></MenuItem>
+					<MenuItem
+						title="Sangb"
+						to="https://tiktok.fullstack.edu.vn/api/">
+						<MenuItem
+							title="Sangbx"
+							to="https://tiktok.fullstack.edu.vn/api/"></MenuItem>
+						<MenuItem
+							title="Sangy"
+							to="https://tiktok.fullstack.edu.vn/api/"></MenuItem>
+					</MenuItem>
+				</MenuItem>
+				<MenuItem
+					title="Sang2"
+					to="https://tiktok.fullstack.edu.vn/api/"></MenuItem>
+			</Menu>
+
+			{/* <Menu title="core">
+				<MenuItem
+					title="Dashboard"
 					to="https://tiktok.fullstack.edu.vn/api/"
 				/>
 
@@ -37,7 +60,7 @@ function Sidebar({ sidebar }) {
 						to="https://tiktok.fullstack.edu.vn/api/"
 					/>
 				</MenuGroup>
-			</Menu>
+			</Menu> */}
 		</div>
 	);
 }

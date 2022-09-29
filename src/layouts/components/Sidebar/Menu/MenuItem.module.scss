@@ -1,0 +1,11 @@
+.item {
+	padding-left: var(--general-ml);
+	display: block;
+}
+
+.sub-menu {
+	display: block;
+	padding-left: var(--general-ml);
+	.title {
+	}
+}
