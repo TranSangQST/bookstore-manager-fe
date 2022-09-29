@@ -5,12 +5,14 @@
 }
 
 .container-wrapper {
+	margin-top: var(--header-height);
 	.content {
 		margin-left: 0;
 		transition: margin 850ms ease-in-out;
 	}
 }
 .container-wrapper--has-sidebar {
+	margin-top: var(--header-height);
 	.content {
 		margin-left: var(--sidebar-width);
 		transition: margin 850ms ease-in-out;

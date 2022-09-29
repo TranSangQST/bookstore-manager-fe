@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import PropTypes from "prop-types";
-import { useState } from "react";g
+import { useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import { NavLink } from "react-router-dom";
 import styles from "./MenuItem.module.scss";
@@ -28,9 +28,11 @@ function MenuItem({ title, to, children }) {
 			</Collapse>
 		</div>
 	) : (
-		<a className={cx("item")} href={to}>
+		<NavLink className={cx("item")} to={to}>
 			{title}
-		</a>
+		</NavLink>
+		// <a className={cx("item")} href={to}>
+		// </a>
 	);
 
 	// return children ? (

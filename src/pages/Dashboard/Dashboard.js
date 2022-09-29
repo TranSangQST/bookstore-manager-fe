@@ -1,6 +1,7 @@
-function Home() {
+function Dashboard() {
 	return (
 		<div>
+			<h1>Dashboard</h1>
 			<p>
 				What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
 				printing and typesetting industry. Lorem Ipsum has been the
@@ -270,4 +271,4 @@ function Home() {
 	);
 }
 
-export default Home;
+export default Dashboard;

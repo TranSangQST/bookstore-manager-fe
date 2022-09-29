@@ -9,6 +9,7 @@ import Menu, { MenuItem } from "./Menu";
 // import config from "../../../config";
 import styles from "./Sidebar.module.scss";
 import MenuGroup from "./Menu/MenuGroup";
+import config from "../../../config";
 
 const cx = classNames.bind(styles);
 
@@ -22,21 +23,17 @@ function Sidebar({ sidebar }) {
 	return (
 		<div className={sidebar ? cx("wrapper") : cx("wrapper", "hide")}>
 			<Menu title="Core" to="https://tiktok.fullstack.edu.vn/api/">
-				<MenuItem
-					title="Sang1"
-					to="https://tiktok.fullstack.edu.vn/api/">
+				<MenuItem title="Sang1">
 					<MenuItem
 						title="Sang1a"
-						to="https://tiktok.fullstack.edu.vn/api/"></MenuItem>
-					<MenuItem
-						title="Sangb"
-						to="https://tiktok.fullstack.edu.vn/api/">
+						to={config.routes.dashboard}></MenuItem>
+					<MenuItem title="Sangb">
 						<MenuItem
 							title="Sangbx"
-							to="https://tiktok.fullstack.edu.vn/api/"></MenuItem>
+							to={config.routes.sale}></MenuItem>
 						<MenuItem
 							title="Sangy"
-							to="https://tiktok.fullstack.edu.vn/api/"></MenuItem>
+							to={config.routes.addSale}></MenuItem>
 					</MenuItem>
 				</MenuItem>
 				<MenuItem
@@ -46,7 +43,7 @@ function Sidebar({ sidebar }) {
 
 			{/* <Menu title="core">
 				<MenuItem
-					title="Dashboard"
+					title="Import"
 					to="https://tiktok.fullstack.edu.vn/api/"
 				/>
 
