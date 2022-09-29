@@ -1,3 +1,5 @@
+$header-avatar-width: calc(var(--header-height) * 75 / 100);
+
 .wrapper {
 	position: fixed;
 	top: 0;
@@ -45,6 +47,11 @@
 
 	&-brand {
 		color: var(--white-color);
+	}
+
+	&-avatar {
+		border-radius: 50%;
+		width: $header-avatar-width;
 	}
 }
 

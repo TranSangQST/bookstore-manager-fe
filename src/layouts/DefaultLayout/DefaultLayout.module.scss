@@ -4,8 +4,19 @@
 	// align-items: center;
 }
 
-.container {
+.container-wrapper {
+	.content {
+		margin-left: 0;
+		transition: margin 850ms ease-in-out;
+	}
+}
+.container-wrapper--has-sidebar {
+	.content {
+		margin-left: var(--sidebar-width);
+		transition: margin 850ms ease-in-out;
+	}
 }
 
-.content {
-}
+// .content {
+// 	transition: margin 0.15s ease-in-out;
+// }

@@ -12,17 +12,22 @@ const cx = classNames.bind(styles);
 function DefaultLayout({ children }) {
 	const [sidebar, setSidebar] = useState(true);
 
-	console.log("sidebar in layout: ", sidebar);
+	// console.log("sidebar in layout: ", sidebar);
 
 	const handleShowSidebar = () => {
-		console.log("handleShowSidebar");
+		// console.log("handleShowSidebar");
 		setSidebar(!sidebar);
 	};
 
 	return (
 		<div className={cx("wrapper")}>
 			<Header sidebar={sidebar} onShowSidebar={handleShowSidebar} />
-			<div className={cx("container")}>
+			<div
+				className={
+					sidebar
+						? cx("container-wrapper--has-sidebar")
+						: cx("container-wrapper")
+				}>
 				<Sidebar sidebar={sidebar} />
 				<div className={cx("content")}>{children}</div>
 			</div>

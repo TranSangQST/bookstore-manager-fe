@@ -8,6 +8,8 @@ $sidebar-mt: $header-height;
 $general-ml: 20px;
 $general-mr: 20px;
 
+$sidebar-width: 200px;
+
 :root {
 	--primary: #fe2c55;
 	--black-color: #000;
@@ -24,6 +26,7 @@ $general-mr: 20px;
 
 	--general-ml: #{$general-ml};
 	--general-mr: #{$general-mr};
+	--sidebar-width: #{$sidebar-width};
 }
 
 * {
