@@ -1,4 +1,4 @@
-// @import "normalize.css";
+@import "normalize.css";
 
 $header-background-color: #212529;
 $sidebar-background-color: $header-background-color;
@@ -9,6 +9,10 @@ $general-ml: 20px;
 $general-mr: 20px;
 
 $sidebar-width: 200px;
+$sidebar-transition-duration: 200ms;
+$sidebar-transition-type: ease-in-out;
+$sidebar-icon-color: rgba(255, 255, 255, 0.25);
+$sidebar-item-color: rgba(255, 255, 255, 0.5);
 
 :root {
 	--primary: #fe2c55;
@@ -27,6 +31,10 @@ $sidebar-width: 200px;
 	--general-ml: #{$general-ml};
 	--general-mr: #{$general-mr};
 	--sidebar-width: #{$sidebar-width};
+	--sidebar-transition-duration: #{$sidebar-transition-duration};
+	--sidebar-transition-type: #{$sidebar-transition-type};
+	--sidebar-icon-color: #{$sidebar-icon-color};
+	--sidebar-item-color: #{$sidebar-item-color};
 }
 
 * {

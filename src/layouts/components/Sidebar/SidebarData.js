@@ -1,3 +1,6 @@
+import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import config from "../../../config";
 export const sidebarMenuDatas = [
 	{
@@ -6,6 +9,7 @@ export const sidebarMenuDatas = [
 			{
 				title: "Dashboard",
 				to: config.routes.dashboard,
+				icon: <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>,
 			},
 			{
 				title: "Sale",
@@ -19,6 +23,7 @@ export const sidebarMenuDatas = [
 						to: config.routes.addSale,
 					},
 				],
+				icon: <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>,
 			},
 			{
 				title: "Import",
@@ -32,6 +37,7 @@ export const sidebarMenuDatas = [
 						to: config.routes.addImport,
 					},
 				],
+				icon: <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>,
 			},
 		],
 	},

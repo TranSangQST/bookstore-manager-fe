@@ -1,26 +1,22 @@
-// $xxx: var(--sidebar-width);
-// $yyy: 0 - $xxx;
-
 .wrapper {
 	position: fixed;
 	top: 0;
 	left: 0;
 
 	margin-top: var(--sidebar-mt);
-
-	background-color: var(--header-background-color);
 	width: var(--sidebar-width);
 	height: 100vh;
-	// width: $xxx;
-	// height: $yyy;
-	// display: none;
 
-	left: 0;
-	transition: left 850ms ease-in-out;
+	background-color: var(--header-background-color);
+
+	transition: left var(--sidebar-transition-duration)
+		var(--sidebar-transition-type);
+
+	overflow: scroll;
 
 	&.hide {
 		left: calc(0px - var(--sidebar-width));
-		// left: -200px;
-		transition: left 850ms ease-in-out;
+		transition: left var(--sidebar-transition-duration)
+			var(--sidebar-transition-type);
 	}
 }
